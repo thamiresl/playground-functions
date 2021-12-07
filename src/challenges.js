@@ -1,8 +1,13 @@
-// Desafio 1
-function compareTrue() {
-  // seu código aqui
-}
-
+ // Desafio 1
+function compareTrue(game1, game2) {
+    if (game1 == true && game2 == true){
+     return true;
+   } else if (game1 == true && game2 == false){
+     return false;
+    } else {
+    return false;
+    }
+  }
 // Desafio 2
 function calcArea() {
   // seu código aqui
