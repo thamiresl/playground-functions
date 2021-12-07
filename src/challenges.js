@@ -20,13 +20,16 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(string) {
+  let separarPalavras = string.split(' ', 3);
+  return separarPalavras;
+ 
 }
 
+    
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(names) {
+  
 }
 
 // Desafio 5
@@ -46,7 +49,18 @@ function catAndMouse() {
 
 // Desafio 8
 function fizzBuzz() {
-  // seu código aqui
+  let numbers = [2, 6, 18, 33, 50];
+  for (let i = 0; i < numbers.length; i++){
+    if (numbers[i]/3 === 0){
+      return "fizz";
+    } else if (numbers[i]/5 === 0){
+      return "buzz";
+    } else if (numbers[i]/3 === 0 && numbers[i]/5 === 0){
+      return "fizzBuzz";
+    } else{
+      return "bug!";
+    }
+  }
 }
 
 // Desafio 9
