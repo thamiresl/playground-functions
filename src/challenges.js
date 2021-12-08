@@ -23,13 +23,14 @@ function calcArea(base, height) {
 function splitSentence(string) {
   let separarPalavras = string.split(' ', 3);
   return separarPalavras;
- 
 }
-
-    
+ 
 // Desafio 4
-function concatName(names) {
-  
+function concatName(nomes) {
+  let primeiroItem = nomes[0];
+  let ultimoItem = nomes[nomes.length - 1];
+  let nomeCompleto = ultimoItem + ", " + primeiroItem; 
+  return nomeCompleto; 
 }
 
 // Desafio 5
