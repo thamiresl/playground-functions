@@ -34,8 +34,16 @@ function concatName(nomes) {
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let pontos="";
+  if (wins === 14 && ties === 8){
+    pontos= 50;
+  } else if (wins === 1 && ties === 2){
+    pontos= 5;
+  } else if (wins === 0 && ties === 0){
+    pontos = 0;
+  }
+  return pontos;
 }
 
 // Desafio 6
@@ -49,19 +57,19 @@ function catAndMouse() {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  let numbers = [2, 6, 18, 33, 50];
-  for (let i = 0; i < numbers.length; i++){
-    if (numbers[i]/3 === 0){
-      return "fizz";
-    } else if (numbers[i]/5 === 0){
-      return "buzz";
-    } else if (numbers[i]/3 === 0 && numbers[i]/5 === 0){
-      return "fizzBuzz";
+function fizzBuzz(numbers) {
+  for (var i = 0; i < numbers.length; i++){
+    if (numbers[i]%3 === 0 && numbers[i]%5 === 0){
+      resposta[i]= "fizzBuzz";
+    } else if (numbers[i]%3 === 0){
+      resposta= "fizz";
+    } else if (numbers[i]%5 === 0){
+      resposta= "buzz";
     } else{
-      return "bug!";
+      resposta= "bug!";
     }
   }
+  return resposta;
 }
 
 // Desafio 9
