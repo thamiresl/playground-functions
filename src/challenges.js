@@ -92,12 +92,40 @@ function fizzBuzz(numbers) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(textNumber) {
+  for (let i = 0; i < textNumber.length; i++){
+    if(textNumber[i] === "a"){
+      textNumber = textNumber.replace('a', 1);
+    } if (textNumber[i] === "e"){
+      textNumber = textNumber.replace('e', 2);
+    } if (textNumber[i] === "i"){
+      textNumber = textNumber.replace('i', 3);
+    } if (textNumber[i] === "o"){
+      textNumber = textNumber.replace('o', 4);  
+    } if (textNumber[i] === "u"){
+      textNumber = textNumber.replace('u', 5);
+    }
+  }
+  return textNumber;
 }
-function decode() {
-  // seu código aqui
+   
+function decode(numberText) {
+  for (let i = 0; i < numberText.length; i++){
+    if(numberText[i] === '1'){
+      numberText = numberText.replace('1', 'a');
+    } if (numberText[i] === '2'){
+      numberText = numberText.replace('2', 'e');
+    } if (numberText[i] === '3'){
+      numberText = numberText.replace('3', 'i');
+    } if (numberText[i] === '4'){
+      numberText = numberText.replace('4', 'o');  
+    } if (numberText[i] === '5'){
+      numberText = numberText.replace('5', 'u');
+    }
+  }
+  return numberText;
 }
+   
 
 module.exports = {
   calcArea,
