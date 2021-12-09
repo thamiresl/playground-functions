@@ -58,9 +58,21 @@ function highestCount(arr) {
 }
 // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/max
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let distanciaCat1 = mouse - cat1;
+  let distanciaCat2 = mouse - cat2;
+   distanciaCat1 = Math.abs(distanciaCat1);
+   distanciaCat2 = Math.abs(distanciaCat2);
+
+  if (distanciaCat1 > distanciaCat2){
+    return "cat2";
+  } else if (distanciaCat2 > distanciaCat1){
+    return "cat1";
+  } else {
+    return "os gatos trombam e o rato foge";
+  }  
 }
+// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
 
 // Desafio 8
 function fizzBuzz(numbers) {
