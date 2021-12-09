@@ -1,13 +1,13 @@
  // Desafio 1
 function compareTrue(game1, game2) {
-    if (game1 == true && game2 == true){
-     return true;
-   } else if (game1 == true && game2 == false){
+ if (game1 == true && game2 == true){
+  return true;
+  } else if (game1 == true && game2 == false){
      return false;
-    } else {
+  } else {
     return false;
-    }
   }
+}
 // Desafio 2
 function calcArea(base, height) {
   if (base === 10 && height === 50){
@@ -45,12 +45,10 @@ function footballPoints(wins, ties) {
   }
   return pontos;
 }
-
 // Desafio 6
-function highestCount() {
-  // seu código aqui
-}
+function highestCount(arr) {
 
+}
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
@@ -58,17 +56,18 @@ function catAndMouse() {
 
 // Desafio 8
 function fizzBuzz(numbers) {
-  for (var i = 0; i < numbers.length; i++){
+  let resposta= [];
+  for (let i = 0; i < numbers.length; i++){
     if (numbers[i]%3 === 0 && numbers[i]%5 === 0){
       resposta[i]= "fizzBuzz";
     } else if (numbers[i]%3 === 0){
-      resposta= "fizz";
+      resposta[i]= "fizz";
     } else if (numbers[i]%5 === 0){
-      resposta= "buzz";
-    } else{
-      resposta= "bug!";
+      resposta[i]= "buzz";
+    } else {
+      resposta[i] = "bug!";
     }
-  }
+  }   
   return resposta;
 }
 
